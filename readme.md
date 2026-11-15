@@ -56,8 +56,8 @@ Pour voir si PHP et composer sont installés dans le terminal :
 
 ### Récupérer le projet 
 
-git clone <url-du-depot>
-cd <nom-du-projet>
+- git clone https://github.com/RaphaelP3/projet_aie.git
+- cd projet_aie
 
 ### Installer les dépendances 
 
