@@ -56,8 +56,12 @@ Pour voir si PHP et composer sont installés dans le terminal :
 
 ### Récupérer le projet 
 
-- git clone https://github.com/RaphaelP3/projet_aie.git
-- cd projet_aie
+Dans un navigateur : 
+* https://github.com/RaphaelP3/projet_aie  (Pour récupérer le repo manuellement avec l'adresse)
+
+Sur VS Code, dans un nouveau dossier : 
+* git clone https://github.com/RaphaelP3/projet\_aie.git
+* cd projet\_aie
 
 ### Installer les dépendances 
 
