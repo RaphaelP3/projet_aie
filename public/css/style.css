@@ -1,0 +1,81 @@
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1d21;
+    color: #e0e0e0;
+    /* font-family: Arial, sans-serif; */
+}
+
+h1 {
+    text-align: center;
+    color: #16d485;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Pour les stats */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 8px;
+    padding: 10px;
+    background-color: #262b31;
+    border: 1px solid #3a4048;
+}
+
+/* Pour le formulaire */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px;
+    background-color: #262b31;
+    color: #e0e0e0;
+    border: 1px solid #3a4048;
+}
+
+/* Pour les boutons */
+button,
+a {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 8px 14px;
+    background-color: #08e78a;
+    color: #1a1a1a;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+a:hover {
+    background-color: #06643d;
+}
+
+/* Pour les messages */
+.message {
+    padding: 10px;
+    background-color: #262b31;
+    border-left: 4px solid #01180e;
+}
+
+.erreur {
+    padding: 10px;
+    background-color: #3a2020;
+    color: #f0a8a5;
+}

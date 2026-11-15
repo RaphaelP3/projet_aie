@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Statistiques{% endblock %}
+
+{% block content %}
+    <h2>Joueurs :</h2>
+
+    {% for partie in parties %}
+        <p>
+            <strong>{{ partie.nickname }}</strong>
+            | Jour {{ min(partie.day_, 30) }}
+            | Santé : {{ partie.health }}
+            | Énergie : {{ partie.energy }}
+            | Abri : {{ partie.shelter_ }}
+            | Nourriture : {{ partie.foods }}
+            | Matériaux : {{ partie.materials_ }}
+        </p>
+    {% else %}
+        <p>Aucune partie enregistrée.</p>
+    {% endfor %}
+
+    <a href="jeu.php">Retour au jeu</a>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block content %}
+    {% if erreur != '' %}
+        <p class="erreur">{{ erreur }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <label for="pseudo">Pseudonyme</label>
+        <input type="text" name="pseudo" id="pseudo" required>
+
+        <label for="mdp">Mot de passe</label>
+        <input type="password" name="mdp" id="mdp" required>
+
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <a href="index.php">Retour à l'accueil</a>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Partie en cours{% endblock %}
+
+{% block content %}
+    <p>Joueur : {{ pseudo }}</p>
+
+    <h2>Jour {{ min(jour, 30) }} / 30</h2>
+    <ul>
+        <li>Santé ❤️ : {{ sante }}</li>
+        <li>Énergie ⚡ : {{ energie }}</li>
+        <li>Abri 🏠 : {{ abri }}</li>
+        <li>Nourriture 🍗 : {{ nourriture }}</li>
+        <li>Matériaux ⚒️ : {{ materiaux }}</li>
+    </ul>
+
+    {% if message != '' %}
+        <p class"message">{{ message }}</p>
+    {% endif %}
+
+    {% if terminee %}
+        {% if victoire %}
+            <p><strong>Victoire ! Tu as survécu 30 jours.</strong></p>
+        {% else %}
+            <p><strong>Game over : tu as survécu {{ jour - 1 }} jour(s).</strong></p>
+        {% endif %}
+
+        <form method="POST">
+            <button type="submit" name="action" value="restart">Nouvelle partie</button>
+        </form>
+    {% else %}
+        <form method="POST">
+            <button type="submit" name="action" value="rest">Se reposer</button>
+            <button type="submit" name="action" value="food">Chercher de la nourriture</button>
+            <button type="submit" name="action" value="material">Chercher des matériaux</button>
+            <button type="submit" name="action" value="repair">Réparer l'abri</button>
+        </form>
+    {% endif %}
+
+    <a href="stats.php">Voir les stats</a>
+    <a href="deconnexion.php">Se déconnecter</a>
+{% endblock %}
