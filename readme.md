@@ -71,7 +71,7 @@ Sur VS Code, dans un nouveau dossier :
 
 ### Créer la base de données 
 
-Récupérer la structure de la base de données (script LDD) dans le fichier .loo puis créer la base de données avec MySql
+Récupérer la structure de la base de données (script LDD) dans le fichier "MCD_aie_chat.loo" puis créer la base de données avec MySql.
 
 ### Configurer la connexion 
 
